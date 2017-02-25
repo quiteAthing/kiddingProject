@@ -1,10 +1,10 @@
 
 const agree_to_term="";
-const btn_login="";
+const btn_login="#login";
 const btn_logout="";
-const btn_continueFB="";
-const field_ACC="";
-const fieldPW="";
+const btn_continueFB="#facebook_login";
+const field_ACC="acc_field";
+const fieldPW="pwd_field";
 const fieldCPW="";//確認密碼
 
 //網站狀態
