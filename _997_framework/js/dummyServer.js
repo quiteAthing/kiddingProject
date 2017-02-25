@@ -5,7 +5,9 @@ function dummyResponse(result){
 }
 //回傳偽造的資料
 function dummyUinfo(){
-	
-	return "dummyIndo";
+	var info=new Object();
+	info.userName="Maverick";
+	info.success="true";
+	return info;
 	
 }

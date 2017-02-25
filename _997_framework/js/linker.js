@@ -19,5 +19,9 @@ const base_path="";
 const c_loginType="loginType";
 const c_lt_fb="FB";
 const c_lt_normal="normal";
+const jam_cookie_key="jamInfo";
+
+const show_userName="";
+const show_login="";
 
 

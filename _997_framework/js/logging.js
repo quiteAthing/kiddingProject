@@ -13,7 +13,7 @@ function getFbInfo(){
 	return fbUinfo;
 }
 
-//info:用來傳遞資料參數的物件，cbf="c"all "b"ack "f"unction
+//info:用來傳遞資料參數的物件，cbf="c"all"b"ack"f"unction
 function setLoginInfo(info,cbf){
 	//一般登入，需要帳號跟密碼
 	console.log("from getLoginInfo  "+info.type);
@@ -31,10 +31,11 @@ function setLoginInfo(info,cbf){
 	//實際login到jam中
 function jamLogin(info,cbf){
 	//送出一個xhr到jam的伺服器，然後等待回應
+	//
 	if(dummyResult(true)){
-		cbf();
-	}else{
-		onLoginFailed();
-		
+		//把假資料寫進cookie
+		document.cookie="jamInfo="+JSON.stringify(dummyUinfo());
+			cbf();
 	}
+	
 }
